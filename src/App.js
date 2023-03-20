@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import { useState } from 'react'
 import './App.css';
+import shoppingIcon from './assets/shopping-icon.svg';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <nav className="nav" >
+                <img className="nav-icon" src={shoppingIcon} alt="Shopping Cart" />
+                <h1 className="nav-title">Shopping Cart</h1>
+            </nav>
+        </>
+    );
 }
 
 export default App;
