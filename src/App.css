@@ -18,3 +18,43 @@
     color: #fff;
     /* margin-left: 16px; */
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: (100vh - 55px);
+    max-width: 460px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+}
+
+.input {
+    flex: 1;
+    margin-right: 8px;
+    box-shadow: 0 0 0 1px #ced4da;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: #495057;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.add-button {
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 80px;
+    background-color: #0d6efd;
+    box-shadow: #495057;
+}
