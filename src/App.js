@@ -5,9 +5,9 @@ import { useState } from 'react';
 function App() {
     const [value, setValue] = useState('');
     const [todos, setTodos] = useState([
-        { text: 'Learn React', count: 1 },
-        { text: 'Learn Firebase', count: 1 },
-        { text: 'Learn GraphQL', count: 1 },
+        { title: 'Learn React', count: 1 },
+        { title: 'Learn Firebase', count: 1 },
+        { title: 'Learn GraphQL', count: 1 },
     ]);
     // console.log(todos);
     console.log(value);
@@ -26,9 +26,18 @@ function App() {
                     <button className="add-button" type="submit">add</button>
                 </form>
                 {todos.length > 0 ? (
-                    <div className="todos"> todoss</div>
+                    <div className="todos">
+                        {todos.map((todo) => {
+                            return (
+                                <div>
+                                    {todo.title}
+                                    {todo.count}
+                                </div>
+                            )
+                        })}
+                    </div>
                 ) : (
-                    <div className="empty">No todos</div>
+                    <div> kosong</div>
                 )}
             </section>
         </>
