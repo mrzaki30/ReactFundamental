@@ -58,3 +58,51 @@
     background-color: #0d6efd;
     box-shadow: #495057;
 }
+
+.todos {
+    box-shadow: var(--main-box-shadow);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 8px;
+    max-height: 640px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 12px 16px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #ced4da;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+.todo-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #0d6efd;
+    color: #fff;
+    box-shadow: 0 0 0 1px #ced4da;
+    margin: auto;
+}
+
+.todo-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.todo-action-button {
+    border: none;
+    background-color: unset;
+    padding: unset;
+    height: 24px;
+    width: 24px;
+}
